@@ -4,11 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KjDev</title>
-    <style>
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-    </style>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body></body>
+  <body class="bg-background">
+    <div class="grid grid-cols-[1fr_3fr_1fr] px-56 py-28 gap-8 border-b-4">
+      <div class="col-span-2 flex border-2 p-2.5 bg-background justify-between">
+        <h3 class="text-6xl">Hello, I'm Kenneth</h3>
+        <img src="/closing-tag.svg" alt="image of closing html tag" />
+      </div>
+      <div class="col-span-3 relative">
+        <div class="border-2 p-2.5 text-7xl bg-background z-50 relative">
+          Full-Stack Developer
+        </div>
+        <div
+          class="bg-background-2 translate-x-2 translate-y-2.5 z-0 w-full h-full absolute top-0"
+        ></div>
+      </div>
+      <div class="relative border-2 aspect-square">
+        <div class="relative z-10 bg-background w-full h-full p-2.5">
+          <img
+            id="man-using-computer"
+            src="/man-using-computer-2.svg"
+            alt="vector image of person reading a book"
+            class="h-full relative"
+          />
+        </div>
+        <div
+          class="bg-background-2 translate-x-2 translate-y-2.5 z-0 w-full h-full absolute top-0"
+        ></div>
+      </div>
+      <div class="relative">
+        <div class="border-2 h-full relative z-10 bg-background p-2.5 text-2xl">
+          Passionate in this field, I am equipped with skills that enable me to
+          solve real-world problems, transforming ideas into software solutions.
+        </div>
+        <div
+          class="bg-background-2 translate-x-2 translate-y-2.5 z-0 w-full h-full absolute top-0"
+        ></div>
+      </div>
+      <div class="relative self-end">
+        <p
+          class="z-10 relative text-blue-600 border-2 bg-background-2 text-background text-xl p-2.5"
+        >
+          learn more about me below
+        </p>
+        <div
+          class="bg-background translate-x-2 translate-y-2.5 z-0 w-full h-full absolute top-0 border-2"
+        ></div>
+      </div>
+    </div>
+  </body>
 </html>

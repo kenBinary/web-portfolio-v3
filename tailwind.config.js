@@ -2,7 +2,10 @@
 export default {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    colors: {
+      background: "#FFFFFF",
+      "background-2": "#000000",
+    },
   },
   plugins: [],
 };
