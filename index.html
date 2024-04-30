@@ -9,10 +9,19 @@
   <body class="bg-background">
     <!-- Intro section -->
     <div class="grid grid-cols-[1fr_3fr_1fr] px-56 py-28 gap-8 border-b-4">
-      <div class="col-span-2 flex border-2 p-2.5 bg-background justify-between">
-        <h3 class="text-6xl">Hello, I'm Kenneth</h3>
-        <img src="/closing-tag.svg" alt="image of closing html tag" />
+      <div class="col-span-2 relative z-10 bg-background">
+        <div
+          class="flex border-2 p-2.5 bg-background justify-between relative z-10"
+        >
+          <h3 class="text-6xl">Hello, I'm Kenneth</h3>
+          <img src="/closing-tag.svg" alt="image of closing html tag" />
+        </div>
+
+        <div
+          class="bg-background-2 translate-x-2 translate-y-2.5 z-0 w-full h-full absolute top-0"
+        ></div>
       </div>
+
       <div class="col-span-3 relative">
         <div class="border-2 p-2.5 text-7xl bg-background z-50 relative">
           Full-Stack Developer
@@ -58,10 +67,10 @@
     <!-- more about me section -->
 
     <!-- skills/technologies section -->
-    <div class="grid grid-cols-[30%_35%_35%] gap-8 border-b-4 px-56 py-28">
+    <div class="grid grid-cols-[6fr_7fr_7fr] gap-8 border-b-4 px-56 py-28">
       <div class="relative col-span-3 row-start-1">
         <h1
-          class="relative z-50 bg-background font-bold border-2 p-2.5 text-5xl"
+          class="relative z-10 bg-background font-bold border-2 p-2.5 text-5xl"
         >
           My Skills
         </h1>
@@ -70,128 +79,167 @@
         ></div>
       </div>
 
-      <div class="border-2 bg-background flex flex-col gap-2 row-span-2">
-        <p class="bg-background-2 text-background p-2.5 font-bold text-lg">
-          languages
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center p-2.5">
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/typescript.svg" alt="logo of typescript" />
-            <p class="text-centers break-all">typescript</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/javascript.svg" alt="logo of javascript" />
-            <p class="text-centers break-all">javascript</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/python.svg" alt="logo of python" />
-            <p class="text-centers break-all">python</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/java.svg" alt="logo of java" />
-            <p class="text-centers break-all">java</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/dart.svg" alt="logo of dart" />
-            <p class="text-centers break-all">dart</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/html.svg" alt="logo of html" />
-            <p class="text-centers break-all">html</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-2/5">
-            <img src="/css.svg" alt="logo of css" />
-            <p class="text-centers break-all">css</p>
+      <div class="border-2 bg-background flex row-span-2 relative">
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-2 translate-y-2 z-0"
+        ></div>
+
+        <div class="bg-background flex flex-col gap-2 row-span-2 relative z-10">
+          <p class="bg-background-2 text-background p-2.5 font-bold text-lg">
+            languages
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center p-2.5">
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/typescript.svg" alt="logo of typescript" />
+              <p class="text-centers break-all">typescript</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/javascript.svg" alt="logo of javascript" />
+              <p class="text-centers break-all">javascript</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/python.svg" alt="logo of python" />
+              <p class="text-centers break-all">python</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/java.svg" alt="logo of java" />
+              <p class="text-centers break-all">java</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/dart.svg" alt="logo of dart" />
+              <p class="text-centers break-all">dart</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/html.svg" alt="logo of html" />
+              <p class="text-centers break-all">html</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-2/5">
+              <img src="/css.svg" alt="logo of css" />
+              <p class="text-centers break-all">css</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="border-2 flex flex-col gap-2 col-start-2 col-span-2">
-        <p class="bg-background-2 z-10 text-background p-2.5 font-bold text-lg">
-          frameworks and libraries
-        </p>
+      <div class="border-2 flexcol-start-2 col-span-2 relative">
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-2 translate-y-2 z-0"
+        ></div>
 
         <div
-          class="bg-background flex z-20 flex-wrap gap-4 justify-center p-2.5"
+          class="bg-backgroundflex flex-col gap-2 col-start-2 col-span-2 relative z-10"
         >
-          <div class="flex flex-col justify-center items-center basis-1/5">
-            <img src="/react.svg" alt="logo of react" />
-            <p class="text-centers break-all">react</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/5">
-            <img src="/express.svg" alt="logo of express.js " />
-            <p class="text-centers break-all">express.js</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/5">
-            <img src="/tailwind.svg" alt="logo of tailwind css" />
-            <p class="text-centers break-all">tailwindcss</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/5">
-            <img src="/chakraui.svg" alt="logo of chakra ui" />
-            <p class="text-centers break-all">chakra ui</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/5">
-            <img src="/flutter.svg" alt="logo of flutter" />
-            <p class="text-centers break-all">flutter</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/5">
-            <img src="/selenium.svg" alt="logo of selenium" />
-            <p class="text-centers break-all">selenium</p>
+          <p
+            class="bg-background-2 z-10 text-background p-2.5 font-bold text-lg"
+          >
+            frameworks and libraries
+          </p>
+
+          <div
+            class="bg-background flex z-20 flex-wrap gap-4 justify-center p-2.5"
+          >
+            <div class="flex flex-col justify-center items-center basis-1/5">
+              <img src="/react.svg" alt="logo of react" />
+              <p class="text-centers break-all">react</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/5">
+              <img src="/express.svg" alt="logo of express.js " />
+              <p class="text-centers break-all">express.js</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/5">
+              <img src="/tailwind.svg" alt="logo of tailwind css" />
+              <p class="text-centers break-all">tailwindcss</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/5">
+              <img src="/chakraui.svg" alt="logo of chakra ui" />
+              <p class="text-centers break-all">chakra ui</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/5">
+              <img src="/flutter.svg" alt="logo of flutter" />
+              <p class="text-centers break-all">flutter</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/5">
+              <img src="/selenium.svg" alt="logo of selenium" />
+              <p class="text-centers break-all">selenium</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="border-2 bg-background flex flex-col gap-2">
-        <p class="bg-background-2 text-background p-2.5 font-bold text-lg">
-          databases
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center p-2.5">
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/mysql.svg" alt="logo of mysql" />
-            <p class="text-centers break-all">mysql</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/sqlite.svg" alt="logo of sqlite" />
-            <p class="text-centers break-all">sqlite</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/mongodb.svg" alt="logo of mongodb" />
-            <p class="text-centers break-all">mongodb</p>
+      <div class="border-2 bg-background flex relative">
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-2 translate-y-2 z-0"
+        ></div>
+
+        <div class="bg-background flex flex-col gap-2 relative z-10 flex-1">
+          <p class="bg-background-2 text-background p-2.5 font-bold text-lg">
+            databases
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center p-2.5">
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/mysql.svg" alt="logo of mysql" />
+              <p class="text-centers break-all">mysql</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/sqlite.svg" alt="logo of sqlite" />
+              <p class="text-centers break-all">sqlite</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/mongodb.svg" alt="logo of mongodb" />
+              <p class="text-centers break-all">mongodb</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="border-2 bg-background flex flex-col gap-2">
-        <p class="bg-background-2 text-background p-2.5 font-bold text-lg">
-          others
-        </p>
-        <div class="flex flex-wrap gap-4 justify-center p-2.5">
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/git.svg" alt="logo of git" />
-            <p class="text-centers break-all">git</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/curl.svg" alt="logo of curl" />
-            <p class="text-centers break-normal">curl</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/firebase.svg" alt="logo of firebase" />
-            <p class="text-centers break-all">firebase</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/node.svg" alt="logo of node" />
-            <p class="text-centers break-all">node.js</p>
-          </div>
-          <div class="flex flex-col justify-center items-center basis-1/4">
-            <img src="/api.svg" alt="logo of api" />
-            <p class="text-centers break-words">REST api</p>
+      <div class="border-2 bg-background relative">
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-2 translate-y-2 z-0"
+        ></div>
+
+        <div class="bg-background flex flex-col gap-2 relative z-10">
+          <p class="bg-background-2 text-background p-2.5 font-bold text-lg">
+            others
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center p-2.5">
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/git.svg" alt="logo of git" />
+              <p class="text-centers break-all">git</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/curl.svg" alt="logo of curl" />
+              <p class="text-centers break-normal">curl</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/firebase.svg" alt="logo of firebase" />
+              <p class="text-centers break-all">firebase</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/node.svg" alt="logo of node" />
+              <p class="text-centers break-all">node.js</p>
+            </div>
+            <div class="flex flex-col justify-center items-center basis-1/4">
+              <img src="/api.svg" alt="logo of api" />
+              <p class="text-centers break-words">REST api</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- project section -->
-    <div class="border-b-4 px-56 py-28 flex flex-col gap-2">
+    <div class="border-b-4 px-56 py-28 flex flex-col gap-y-8">
+      <div class="relative col-span-3 row-start-1">
+        <h1
+          class="relative z-50 bg-background font-bold border-2 p-2.5 text-5xl"
+        >
+          Projects
+        </h1>
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-2 translate-y-2 z-0"
+        ></div>
+      </div>
+
       <div class="border-2 grid grid-cols-[5fr_2fr] grid-rows-[2fr_15fr_3fr]">
         <!-- first project -->
         <div class="border p-2.5 text-lg bg-background font-bold">
@@ -363,73 +411,82 @@
         </div>
 
         <div class="text-2xl bg-background p-2.5 relative z-10">
-          <p>Feel free to message me on:</p>
-          <a href="mailto:kennethbecaro0@gmail.com" class="underline"
-            >kennethbecaro0@gmail.com</a
-          >
+          <p>
+            Got any questions? or just want to say hi? Feel free to message me
+            on:
+            <a href="mailto:kennethbecaro0@gmail.com" class="underline"
+              >kennethbecaro0@gmail.com</a
+            >
+          </p>
         </div>
       </div>
 
-      <div class="bg-background border-2 p-2.5 flex flex-wrap gap-8">
-        <a
-          href="https://www.linkedin.com/in/kjbdev/"
-          class="flex p-2 justify-between gap-2 border-2 flex-1 text-xl font-bold"
-          target="_blank"
-        >
-          <div class="flex gap-2 items-center">
-            <img
-              src="/socials-section/linkedin.svg"
-              alt="logo of linkedin"
-              class="w-10"
-            />
-            <p>linkedin</p>
-          </div>
-          <img
-            src="/new-window.svg"
-            alt="icon that indicates to open link in new window"
-            class="w-10"
-          />
-        </a>
+      <div class="relative">
+        <div
+          class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-2 translate-y-2 z-0"
+        ></div>
 
-        <a
-          href="https://github.com/kenBinary"
-          class="flex p-2 justify-between gap-2 border-2 flex-1 text-xl font-bold"
-          target="_blank"
-        >
-          <div class="flex gap-2 items-center">
+        <div class="bg-background border-2 p-2.5 flex flex-wrap gap-8 relative">
+          <a
+            href="https://www.linkedin.com/in/kjbdev/"
+            class="flex p-2 justify-between gap-2 border-2 flex-1 text-xl font-bold"
+            target="_blank"
+          >
+            <div class="flex gap-2 items-center">
+              <img
+                src="/socials-section/linkedin.svg"
+                alt="logo of linkedin"
+                class="w-10"
+              />
+              <p>linkedin</p>
+            </div>
             <img
-              src="/socials-section/github.svg"
-              alt="logo of github"
+              src="/new-window.svg"
+              alt="icon that indicates to open link in new window"
               class="w-10"
             />
-            <p>github</p>
-          </div>
-          <img
-            src="/new-window.svg"
-            alt="icon that indicates to open link in new window"
-            class="w-10"
-          />
-        </a>
+          </a>
 
-        <a
-          href="https://www.facebook.com/kjbDev/"
-          class="flex p-2 justify-between gap-2 border-2 flex-1 text-xl font-bold"
-          target="_blank"
-        >
-          <div class="flex gap-2 items-center">
+          <a
+            href="https://github.com/kenBinary"
+            class="flex p-2 justify-between gap-2 border-2 flex-1 text-xl font-bold"
+            target="_blank"
+          >
+            <div class="flex gap-2 items-center">
+              <img
+                src="/socials-section/github.svg"
+                alt="logo of github"
+                class="w-10"
+              />
+              <p>github</p>
+            </div>
             <img
-              src="/socials-section/facebook.svg"
-              alt="logo of facebook"
+              src="/new-window.svg"
+              alt="icon that indicates to open link in new window"
               class="w-10"
             />
-            <p>facebook</p>
-          </div>
-          <img
-            src="/new-window.svg"
-            alt="icon that indicates to open link in new window"
-            class="w-10"
-          />
-        </a>
+          </a>
+
+          <a
+            href="https://www.facebook.com/kjbDev/"
+            class="flex p-2 justify-between gap-2 border-2 flex-1 text-xl font-bold"
+            target="_blank"
+          >
+            <div class="flex gap-2 items-center">
+              <img
+                src="/socials-section/facebook.svg"
+                alt="logo of facebook"
+                class="w-10"
+              />
+              <p>facebook</p>
+            </div>
+            <img
+              src="/new-window.svg"
+              alt="icon that indicates to open link in new window"
+              class="w-10"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </body>
