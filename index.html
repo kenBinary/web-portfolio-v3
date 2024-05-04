@@ -9,6 +9,121 @@
   </head>
   <body class="bg-background">
     <div
+      id="drawer"
+      class="flex justify-end bg-background-2 bg-opacity-35 z-50 fixed top-0 left-0 bottom-0 hide-drawer"
+    >
+      <div
+        id="drawer-project-details"
+        class="bg-background w-full overflow-y-auto flex flex-col lg:w-2/3 xl:w-1/2 2xl:w-[40%]"
+      >
+        <div class="flex justify-between p-2.5 border-b">
+          <div id="drawer-project-title" class="text-2xl font-bold xl:text-3xl">
+            some title
+          </div>
+          <div id="close-drawer" class="text-xl cursor-pointer">&#10005;</div>
+        </div>
+
+        <div id="project-overview" class="px-4 py-2.5">
+          <div class="text-xl font-semibold xl:text-2xl">Overview</div>
+          <div id="drawer-overview-desc" class="xl:text-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
+            iusto recusandae nulla reiciendis, unde iure ratione itaque. Soluta
+            at sint dolorum quo, laborum ea inventore enim illum quam animi
+            culpa?
+          </div>
+        </div>
+
+        <div id="project-technologies" class="px-4 py-2.5">
+          <div class="text-xl font-semibold xl:text-2xl">Technologies</div>
+          <ul
+            id="drawer-project-technologies"
+            class="flex flex-wrap gap-3 justify-center py-3 xl:text-xl"
+          >
+            <li class="border relative">
+              <div
+                class="flex justify-center bg-background gap-x-2 items-center relative z-10 p-1"
+              >
+                <img src="/react.svg" alt="logo of react" class="w-7" />
+                <p class="text-center break-normal">react</p>
+              </div>
+
+              <div
+                class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-1 translate-y-1 z-0"
+              ></div>
+            </li>
+
+            <li class="border relative">
+              <div
+                class="flex justify-center bg-background gap-x-2 items-center relative z-10 p-1"
+              >
+                <img src="/react.svg" alt="logo of react" class="w-7" />
+                <p class="text-center break-normal">react</p>
+              </div>
+
+              <div
+                class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-1 translate-y-1 z-0"
+              ></div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="project-technologies" class="px-4 py-2.5">
+          <div class="text-xl font-semibold xl:text-2xl">Features</div>
+          <ul
+            id="drawer-project-features"
+            class="list-disc pl-4 xl:columns-2 xl:text-xl"
+          >
+            <li>hello darkness my old friend ive come to talk to you again</li>
+            <li>deployed on some intergalactic server</li>
+            <li>ive become so numb, i cant feel you there</li>
+            <li>alksjdf</li>
+            <li>brhu</li>
+          </ul>
+        </div>
+
+        <div id="project-technologies" class="px-4 py-2.5">
+          <div class="text-xl font-semibold xl:text-2xl">Links</div>
+
+          <div class="flex justify-center gap-x-5 xl:text-xl">
+            <div class="p-0.5 relative">
+              <p class="border relative z-10 bg-background p-2">
+                <a
+                  id="drawer-project-code-link"
+                  href="https://github.com/kenBinary/trabahuso-frontend"
+                  target="_blank"
+                  class="relative z-10 flex"
+                  >code
+                  <img src="/new-window.svg" alt="" class="w-5" />
+                </a>
+              </p>
+
+              <div
+                class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-1 translate-y-1 z-0"
+              ></div>
+            </div>
+
+            <div class="p-0.5 relative">
+              <p class="border relative z-10 bg-background p-2">
+                <a
+                  id="drawer-project-demo-link"
+                  href="https://kenbinary.github.io/trabahuso-frontend/"
+                  target="_blank"
+                  class="relative z-10 flex"
+                  >demo
+                  <img src="/new-window.svg" alt="" class="w-5" />
+                </a>
+              </p>
+
+              <div
+                class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-1 translate-y-1 z-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
       class="grid gap-8 border-b-4 grid-cols-2 p-5 sm:p-8 sm:grid-cols-[1fr_3fr_1fr] xl:px-56 xl:py-28"
     >
       <div class="col-span-2 relative z-10 bg-background">
@@ -290,7 +405,7 @@
     <div class="border-b-4 flex flex-col p-5 gap-8 xl:px-56 xl:py-28 sm:p-8">
       <div class="relative">
         <h1
-          class="relative z-50 bg-background font-bold border-2 p-2.5 text-5xl"
+          class="relative z-10 bg-background font-bold border-2 p-2.5 text-5xl"
         >
           Projects
         </h1>
@@ -354,7 +469,7 @@
         </div>
 
         <div
-          class="border bg-background p-2.5 flex justify-center items-start gap-2"
+          class="border bg-background p-2.5 flex flex-wrap justify-center items-start gap-2"
         >
           <div class="p-0.5 relative">
             <p class="border relative z-10 bg-background p-0.5">
@@ -382,6 +497,21 @@
                 <img src="/new-window.svg" alt="" class="w-5" />
               </a>
             </p>
+
+            <div
+              class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-1 translate-y-1 z-0"
+            ></div>
+          </div>
+
+          <div class="p-0.5 relative">
+            <button
+              type="button"
+              class="detail-button relative z-10 flex border bg-background p-0.5"
+              data-project-title="trabahuso"
+            >
+              details
+              <img src="/new-window.svg" alt="" class="w-5" />
+            </button>
 
             <div
               class="absolute left-0 top-0 h-full w-full bg-background-2 translate-x-1 translate-y-1 z-0"
@@ -547,5 +677,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -9,3 +9,12 @@ body {
   background-size: 25px 25px;
   font-family: "Space Mono", monospace;
 }
+.disable-scroll {
+  overflow: hidden;
+}
+.show-drawer {
+  display: flex;
+}
+.hide-drawer {
+  display: none !important;
+}
